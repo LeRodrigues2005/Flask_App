@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="title">Blog</h1>
+
+    <!-- Mensagens Flash -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{url_for('add_post')}}">
+        <label>Title:</label><br>
+        <input type="text" name="title"><br><br>
+        <label>Author:</label><br>
+        <input type="text" name="author"><br><br>
+        <label>Content:</label><br>
+        <textarea type="text" name="content"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="posts-wrapper">
+        {% for post in posts %}
+        <div class="post-container">
+            <h2 class="post-title">Post:</h2>
+            <h2>{{ post.title }}</h2>
+            <h4>{{ post.author }}</h4>
+            <p>{{ post.content }}</p>
+            <a href="{{ url_for('edit_post', id=post.id) }}">Edit</a>
+            <a href="{{ url_for('delete_post', id=post.id) }}">Delete</a>
+        </div>
+        {% endfor %}
+    </div>
+
+     <aside class="sidebar">
+            <h3>Sobre</h3>
+            <p>Este é um blog criado a fim de estudos e testes, desenvolvido por <a href="https://github.com/LeRodrigues2005">Letícia De Patta Rodrigues.</a></p>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; 2024 Blog
+    </footer>
+</body>
+</html>

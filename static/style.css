@@ -1,0 +1,182 @@
+/* Reset básico para uma aparência mais consistente em todos os navegadores */
+* {
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #87CEEB;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-family: URW Chancery L, cursive;
+    margin-top: 0px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background: #5cb85c;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+/* Container dos posts */
+.post-container {
+    width: 300px; /* Define a largura do post */
+    background-color: #ffffff; /* Fundo branco para os posts */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 0px; /* Espaçamento entre os posts */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos na largura total */
+}
+
+/* Container geral que envolve todos os posts */
+.posts-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que os posts quebrem linha quando não couberem na tela */
+    gap: 15px; /* Espaçamento entre os posts */
+}
+
+/* Estilo para os títulos e conteúdo dentro do post */
+.post-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post-container h4 {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.post-container p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.post-container a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.post-container a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.post-title {
+    font-family: URW Chancery L, cursive;
+}
+
+h4 {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+
+/* Estilo para as mensagens flash */
+
+.flash-messages {
+    margin: 20px;
+}
+
+.flash {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.flash.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.flash.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
