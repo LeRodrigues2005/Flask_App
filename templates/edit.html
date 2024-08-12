@@ -25,11 +25,10 @@
         <label>Author:</label><br>
         <input type="text" name="author" value="{{post.author}}"><br><br>
         <label>Content:</label><br>
-        <textarea id="content" name="content"></textarea><br><br>
+        <textarea id="content" name="content">{{ post.content|e }}</textarea>
+        <!-- |e = filtro que escapa caracteres especiais em HTML -->
         <input type="submit" value="Submit">
     </form>
-    <script>
-        document.getElementById("content").value="{{post.content}}";
-    </script>
+
 </body>
 </html>
