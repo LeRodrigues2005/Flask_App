@@ -1,24 +1,42 @@
-# Blog com Flask
-Este é um projeto de um blog simples desenvolvido com Flask e Python, utilizando HTML e CSS para o frontend. O site permite que os usuários criem, editem e deletem postagens. As informações das postagens são armazenadas em um banco de dados SQLite localizado na pasta instance.
+# Blog with Flask
+This is a project for a simple blog developed with Flask and Python, using HTML and CSS for the frontend. The site allows users to create, edit, and delete posts. The post information is stored in an SQLite database located in the instance folder.
 
-## Funcionalidades
-Criar Postagens: Os usuários podem criar novas postagens no blog.
-Editar Postagens: As postagens existentes podem ser editadas.
-Deletar Postagens: Os usuários podem deletar postagens que não desejam mais exibir.
-Visualização das Postagens: Todas as postagens são exibidas na página inicial do blog.
+## Features
+- **Create Posts**: Users can create new blog posts.
+- **Edit Posts**: Existing posts can be edited.
+- **Delete Posts**: Users can delete posts they no longer wish to display.
+- **View Posts**: All posts are displayed on the blog's homepage.
 
-## Requisitos
-Python 3.x: Certifique-se de que você tem o Python 3.x instalado no seu ambiente.
-Flask: Um microframework web para Python.
-Flask-SQLAlchemy: Uma extensão do Flask que facilita o uso de bancos de dados com SQLAlchemy.
-DB Browser for SQLite: Um software GUI opcional recomendado para a visualização e edição do banco de dados SQLite.
+## Requirements
+- **Python 3.x**: Make sure you have Python 3.x installed in your environment.
+- **IDE**: (For this project, I used PyCharm Community)
+- **Flask**: A micro web framework for Python.
+- **Flask-SQLAlchemy**: A Flask extension that makes it easier to use databases with SQLAlchemy.
+- <a href="https://sqlitebrowser.org/dl/">**DB Browser for SQLite**</a>: An optional GUI software recommended for viewing and editing the SQLite database.
 
-## Aparência inicial
+To install Flask and Flask-SQLAlchemy, you can use the following command:
+
+`pip install Flask Flask-SQLAlchemy`
+
+## Initial Appearance
 <p align="center">
 <img src="https://github.com/user-attachments/assets/dd59f869-5fe9-4523-8344-fd76c1c71433" alt="" width="900">
 </p>
 
-Clicando em "edit" você é redirecionado à página de edição do post:
+Clicking "edit" redirects you to the post editing page:
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c64493db-3d31-4a38-b7f1-20898d957c2b" alt="" width="700">
+<img src="https://github.com/user-attachments/assets/c64493db-3d31-4a38-b7f1-20898d957c2b" alt="" width="900">
 </p>
+
+Clicking "delete" removes the post from the database.
+
+## Database
+
+To use DB Browser for SQLite as the database, simply import the `blog.sqlite3` file. Step-by-step:
+
+1. Open DB Browser for SQLite and click _Open Database_.
+2. Select the `blog.sqlite3` file (inside the `instance` folder) in the `flask_app` directory.
+3. To navigate through the _posts_ table, simply click on _Browse Data_.
+
+### Additional Information
+Feel free to explore and contribute to this project. Your feedback and suggestions are highly appreciated.
