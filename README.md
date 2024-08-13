@@ -9,7 +9,7 @@ This is a project for a simple blog developed with Flask and Python, using HTML 
 
 ## Requirements
 - **Python 3.x**: Make sure you have Python 3.x installed in your environment.
-- **IDE**: (For this project, I used PyCharm Community)
+- **IDE**: For this project, I used <a href="https://www.jetbrains.com/pycharm/download/?section=windows">PyCharm</a> (Community Edition).
 - **Flask**: A micro web framework for Python.
 - **Flask-SQLAlchemy**: A Flask extension that makes it easier to use databases with SQLAlchemy.
 - <a href="https://sqlitebrowser.org/dl/">**DB Browser for SQLite**</a>: An optional GUI software recommended for viewing and editing the SQLite database.
