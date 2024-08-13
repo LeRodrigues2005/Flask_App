@@ -19,20 +19,23 @@ To install Flask and Flask-SQLAlchemy, you can use the following command:
 `pip install Flask Flask-SQLAlchemy`
 
 ## Initial Appearance
+
+You can create your posts by filling out the input field and clicking ***submit***. The posts will appear on the same page.
+
 <p align="center">
 <img src="https://github.com/user-attachments/assets/dd59f869-5fe9-4523-8344-fd76c1c71433" alt="" width="900">
 </p>
 
-Clicking "edit" redirects you to the post editing page:
+Clicking ***edit*** redirects you to the post editing page:
 <p align="center">
 <img src="https://github.com/user-attachments/assets/c64493db-3d31-4a38-b7f1-20898d957c2b" alt="" width="900">
 </p>
 
-Clicking "delete" removes the post from the database.
+Clicking ***delete*** removes the post from the database.
 
 ## Database
 
-To use DB Browser for SQLite as the database, simply import the `blog.sqlite3` file. Step-by-step:
+To use **DB Browser for SQLite** as the database, simply import the `blog.sqlite3` file. Step-by-step:
 
 1. Open DB Browser for SQLite and click _Open Database_.
 2. Select the `blog.sqlite3` file (inside the `instance` folder) in the `flask_app` directory.
