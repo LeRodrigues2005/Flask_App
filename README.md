@@ -20,5 +20,5 @@ DB Browser for SQLite: Um software GUI opcional recomendado para a visualizaçã
 
 Clicando em "edit" você é redirecionado à página de edição do post:
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c64493db-3d31-4a38-b7f1-20898d957c2b)" alt="" width="700">
+<img src="https://github.com/user-attachments/assets/c64493db-3d31-4a38-b7f1-20898d957c2b" alt="" width="700">
 </p>
