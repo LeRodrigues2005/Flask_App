@@ -99,6 +99,7 @@ def edit_post(id):
 
 ##### API #####
 
+
 @app.route("/api/posts")
 def api_list_posts():
     try:
